@@ -14,9 +14,11 @@ function FetchInstagram(link) {
             await page.goto(`https://imginn.org/p/${ref}/`);
 
             await page.evaluate(()=> {
-                window.scrollTo(0, 10)
+                window.scrollTo(0, 100);
             })
-        
+
+            await page.click("")
+
             await page.evaluate(() => {
 
                 const post = {
