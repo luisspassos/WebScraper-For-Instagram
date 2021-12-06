@@ -5,6 +5,7 @@
   "author": "Luís Passos <luis.passos013@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "puppeteer": "^12.0.1"
   }
 }
