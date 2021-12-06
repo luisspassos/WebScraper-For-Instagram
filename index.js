@@ -12,10 +12,12 @@ function FetchInstagram(link) {
             });
             const page = await browser.newPage();
             await page.goto(`https://imginn.org/p/${ref}/`);
+
+            await page.evaluate(()=> {
+                window.scrollTo(0, 10)
+            })
         
             await page.evaluate(() => {
-
-                window.scrollTo(0, window.innerHeight)
 
                 const post = {
                     authorImg: document.querySelector(".avatar > img").src,
