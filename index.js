@@ -17,7 +17,11 @@ function FetchInstagram(link) {
                 window.scrollTo(0, 100);
             })
 
-            await page.click("")
+            await page.click(".swiper-button-next", {delay: 300})
+            await page.click(".swiper-button-next", {delay: 300})
+            await page.click(".swiper-button-next", {delay: 300})
+            await page.click(".swiper-button-next", {delay: 300})
+            await page.click(".swiper-button-next", {delay: 300})
 
             await page.evaluate(() => {
 
