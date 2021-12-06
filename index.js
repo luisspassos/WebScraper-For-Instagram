@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 
 require('dotenv').config();
 
-function FetchInstagram(link) {
+module.exports = function FetchInstagram(link) {
     return new Promise(async function (resolve, reject) {
         try {
             const ref = link.split('/').filter(el => el !== "").pop();
@@ -37,19 +37,9 @@ function FetchInstagram(link) {
 
             return resolve(JSON.stringify(post, null, 2))
         } catch (e) {
-
-            reject(e);
+            reject("Your URL is invalid");
         }
 
     })
 
 };
-
-(async ()=> {
-    const post = await FetchInstagram("https://www.instagram.com/p/CXG9AiIr4Nq/");
-
-    console.log(post)
-})()
-    
-
-
