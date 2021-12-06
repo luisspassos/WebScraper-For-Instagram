@@ -1,7 +1,5 @@
 const puppeteer = require('puppeteer');
 
-require('dotenv').config();
-
 module.exports = function FetchInstagram(link) {
     return new Promise(async function (resolve, reject) {
         try {
@@ -43,3 +41,4 @@ module.exports = function FetchInstagram(link) {
     })
 
 };
+
