@@ -3,27 +3,18 @@ const puppeteer = require('puppeteer');
 require('dotenv').config();
 
 function FetchInstagram(link) {
-    return new Promise(async function(resolve, reject) {
+    return new Promise(async function (resolve, reject) {
         try {
             const ref = link.split('/').filter(el => el !== "").pop();
 
-            const browser = await puppeteer.launch({
-                headless: false,
-            });
+            const browser = await puppeteer.launch();
             const page = await browser.newPage();
             await page.goto(`https://imginn.org/p/${ref}/`);
 
-            await page.evaluate(()=> {
-                window.scrollTo(0, 100);
-            })
+            const post = await page.evaluate(() => {
 
-            await page.click(".swiper-button-next", {delay: 300})
-            await page.click(".swiper-button-next", {delay: 300})
-            await page.click(".swiper-button-next", {delay: 300})
-            await page.click(".swiper-button-next", {delay: 300})
-            await page.click(".swiper-button-next", {delay: 300})
-
-            await page.evaluate(() => {
+                const imgs = [...document.querySelectorAll(".content img")].map(el => el.getAttribute("data-src"));
+                const videos = [...document.querySelectorAll(".content video")].map(el => el.getAttribute("src"));
 
                 const post = {
                     authorImg: document.querySelector(".avatar > img").src,
@@ -31,21 +22,34 @@ function FetchInstagram(link) {
                     authorNickname: document.querySelector(".nickname").textContent,
                     date: document.querySelector(".date").textContent,
                     desc: document.querySelector(".desc").textContent,
-                    media: [...document.querySelectorAll(".content img"), ...document.querySelectorAll(".content video")].map(({src})=> src)
+                    media: [...imgs, ...videos],
+                    comments: [...document.querySelectorAll(".comment")].map((_, i) => ({
+                        comment: document.querySelectorAll(".comment .text")[i].textContent,
+                        author: document.querySelectorAll(".comment .name")[i].textContent,
+                        authorImg: document.querySelectorAll(".comment img")[i].getAttribute("data-src")
+                    }))
                 }
 
-                console.log(post);
-
-                //await browser.close();
+                return post
             })
-            resolve();
+
+            await browser.close();
+
+            return resolve(JSON.stringify(post, null, 2))
         } catch (e) {
+
             reject(e);
-        }   
-    
+        }
+
     })
-    
+
 };
 
-(async () => { await FetchInstagram('https://www.instagram.com/p/CWoP3rhPkKM/');})()
-console.log("AAAAAAAAAAAAAAAAAAAA")
+(async ()=> {
+    const post = await FetchInstagram("https://www.instagram.com/p/CXG9AiIr4Nq/");
+
+    console.log(post)
+})()
+    
+
+
