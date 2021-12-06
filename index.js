@@ -35,8 +35,8 @@ module.exports = function FetchInstagram(link) {
 
             return resolve(JSON.stringify(post, null, 2))
         } catch (e) {
-            console.error(e);
-            reject("Your URL is invalid");
+            console.error("Your URL is invalid!");
+            reject(e);
         }
 
     })
