@@ -33,7 +33,7 @@
 <h4 align="center"> 
 	🚧  WebScraper For Instagram 🤖 Concluído 🚀 🚧
 </h4>
-
+VER ISSO DEPOISSSSSSSSSSSSSSSSS
 <p align="center">
  <a href="#-sobre-o-projeto">Sobre</a> •
  <a href="#-funcionalidades">Funcionalidades</a> •
@@ -48,126 +48,75 @@
 
 ## 💻 Sobre o projeto
 
-🤖 WebScraper For Instagram - é um garimpador de dados para o Instagram, feito para extrair fotos, Reels
+🤖 WebScraper For Instagram - é um garimpador de dados para o Instagram, feito para extrair fotos, Reels e posts em geral.
 
 
-Projeto desenvolvido durante a **NLW - Next Level Week** oferecida pela [Rocketseat](https://blog.rocketseat.com.br/primeira-next-level-week/).
-O NLW é uma experiência online com muito conteúdo prático, desafios e hacks onde o conteúdo fica disponível durante uma semana.
+Projeto desenvolvido para as pessoas que querem uma biblioteca que extraia dados do Instagram de forma rápida e fácil.
 
 ---
 
 ## ⚙️ Funcionalidades
 
-- [x] Empresas ou entidades podem se cadastrar na plataforma web enviando:
-  - [x] uma imagem do ponto de coleta
-  - [x] nome da entidade, email e whatsapp
-  - [x] e o endereço para que ele possa aparecer no mapa
-  - [x] além de selecionar um ou mais ítens de coleta: 
-    - lâmpadas
-    - pilhas e baterias
-    - papéis e papelão
-    - resíduos eletrônicos
-    - resíduos orgânicos
-    - óleo de cozinha
+- [x] As pessoas podem obter receber as informações por meio de seu link do post do Instagram.
+- [x] Os usuários podem receber como retorno um JSON que há:
+  - [x] Vídeos;
+    - URL;
+  - [x] Imagens;
+    - URL;
+  - [x] Comentários:
+    - Mensagem;
+    - Avatar do autor;
+    - O arroba/nome do autor;	
+  - [X] Informações do Autor da postagem;
+    - Avatar;
+    - Apelido;
+    - Arroba;
+  - [X] Data de postagem;
+  - [X] Descrição;
 
-- [x] Os usuários tem acesso ao aplicativo móvel, onde podem:
-  - [x] navegar pelo mapa para ver as instituições cadastradas
-  - [x] entrar em contato com a entidade através do E-mail ou do WhatsApp
-
----
-
-## 🎨 Layout
-
-O layout da aplicação está disponível no Figma:
-
-<a href="https://www.figma.com/file/1SxgOMojOB2zYT0Mdk28lB/Ecoleta?node-id=136%3A546">
-  <img alt="Made by tgmarinho" src="https://img.shields.io/badge/Acessar%20Layout%20-Figma-%2304D361">
-</a>
-
-
-### Mobile
-
-<p align="center">
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/home-mobile.png" width="200px">
-
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/detalhes-mobile.svg" width="200px">
-</p>
-
-### Web
-
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/web.svg" width="400px">
-
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/sucesso-web.svg" width="400px">
-</p>
+- [x] Há mensagem de erro caso aconteça um. 
 
 ---
 
-## 🚀 Como executar o projeto
+## 🚀 Como executar a dependência
 
-Este projeto é divido em três partes:
-1. Backend (pasta server) 
-2. Frontend (pasta web)
-3. Mobile (pasta mobile)
-
-💡Tanto o Frontend quanto o Mobile precisam que o Backend esteja sendo executado para funcionar.
+Este projeto é executado no Back End.
 
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
+[Node.js](https://nodejs.org/en/). 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-#### 🎲 Rodando o Backend (servidor)
+#### ⬇️ Baixando a dependência
 
 ```bash
 
-# Clone este repositório
-$ git clone git@github.com:tgmarinho/README-ecoleta.git
+# Navegue até a pasta do seu projeto
+cd project/
 
-# Acesse a pasta do projeto no terminal/cmd
-$ cd README-ecoleta
+# Instale com o pacote NPM
+npm i webscraper_for_instagram
 
-# Vá para a pasta server
-$ cd server
-
-# Instale as dependências
-$ npm install
-
-# Execute a aplicação em modo de desenvolvimento
-$ npm run dev:server
-
-# O servidor inciará na porta:3333 - acesse http://localhost:3333 
+# Ou com o yarn
+yarn add webscraper_for_instagram
 
 ```
-<p align="center">
-  <a href="https://github.com/tgmarinho/README-ecoleta/blob/master/Insomnia_API_Ecoletajson.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
-</p>
+#### 🪄 Executando
 
+```js
+const fetchInstagram = require("webscraper_for_instagram");
 
-#### 🧭 Rodando a aplicação web (Frontend)
+(async()=> {
 
-```bash
+const post = await fetchInstagram("https://www.instagram.com/p/CXChwP3Pvke/");
 
-# Clone este repositório
-$ git clone git@github.com:tgmarinho/README-ecoleta.git
+console.log(post);
 
-# Acesse a pasta do projeto no seu terminal/cmd
-$ cd README-ecoleta
-
-# Vá para a pasta da aplicação Front End
-$ cd web
-
-# Instale as dependências
-$ npm install
-
-# Execute a aplicação em modo de desenvolvimento
-$ npm run start
-
-# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
-
+})()
 ```
 
+- <h3><a href="./output.json">OUTPUT</h3>
 ---
 
 ## 🛠 Tecnologias
