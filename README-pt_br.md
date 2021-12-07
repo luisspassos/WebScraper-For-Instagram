@@ -21,7 +21,7 @@
     <img alt="Stargazers" src="https://img.shields.io/github/stars/luisspassos/WebScraper-For-Instagram?style=social">
   </a>
   
-  <a href="https://github.com/luispassos/">
+  <a href="https://github.com/luisspassos/">
     <img src="https://img.shields.io/badge/Feito%20por-luisspassos-FFA500" alt="luisspassos Github">
   </a>     
  
@@ -33,27 +33,28 @@
 <h4 align="center"> 
 	🚧  WebScraper For Instagram 🤖 Concluído 🚀 🚧
 </h4>
-VER ISSO DEPOISSSSSSSSSSSSSSSSS
+
 <p align="center">
- <a href="#-sobre-o-projeto">Sobre</a> •
- <a href="#-funcionalidades">Funcionalidades</a> •
- <a href="#-layout">Layout</a> • 
- <a href="#-como-executar-o-projeto">Como executar</a> • 
- <a href="#-tecnologias">Tecnologias</a> • 
- <a href="#-contribuidores">Contribuidores</a> • 
- <a href="#-autor">Autor</a> • 
- <a href="#user-content--licença">Licença</a>
+ <a href="#sobre-o-projeto">Sobre</a> •
+ <a href="#funcionalidades">Funcionalidades</a> •
+ <a href="#como-executar">Como executar</a> • 
+ <a href="#tecnologias">Tecnologias</a> • 
+ <a href="#autor">Autor</a> • 
+ <a href="#licença">Licença</a>
 </p>
 
-
+<a name="sobre-o-projeto">
+	
 ## 💻 Sobre o projeto
 
-🤖 WebScraper For Instagram - é um garimpador de dados para o Instagram, feito para extrair fotos, Reels e posts em geral.
+🤖 WebScraper For Instagram - é um garimpador de dados para o Instagram, feito para extrair fotos, reels e posts em geral.
 
 
 Projeto desenvolvido para as pessoas que querem uma biblioteca que extraia dados do Instagram de forma rápida e fácil.
 
 ---
+	
+<a name="funcionalidades">
 
 ## ⚙️ Funcionalidades
 
@@ -77,6 +78,8 @@ Projeto desenvolvido para as pessoas que querem uma biblioteca que extraia dados
 - [x] Há mensagem de erro caso aconteça um. 
 
 ---
+	
+<a name="como-executar">
 
 ## 🚀 Como executar a dependência
 
@@ -84,8 +87,8 @@ Este projeto é executado no Back End.
 
 ### Pré-requisitos
 
-Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Node.js](https://nodejs.org/en/). 
+Antes de começar, você vai precisar ter instalado em sua máquina a seguinte ferramenta:
+[Node.js](https://nodejs.org/en/)<br>
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
 #### ⬇️ Baixando a dependência
@@ -117,16 +120,19 @@ console.log(post);
 ```
 
 - <h3><a href="./output.json">OUTPUT</h3>
+	
 ---
+	
+<a name="tecnologias">
 
 ## 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 	
 - <a href="https://nodejs.org/en/">Node JS</a>
-- <a href="https://pptr.dev/">Puppeteer
+- <a href="https://pptr.dev/">Puppeteer</a>
 
-> Veja o arquivo  [package.json]("https://github.com/luisspassos/WebScraper-For-Instagram/blob/main/package.json")
+> Veja o arquivo <a href="https://github.com/luisspassos/WebScraper-For-Instagram/blob/main/package.json">package.json</a>
 
 #### [](https://github.com/luisspassos/WebScraper-For-Instagram#utilit%C3%A1rios)**Utilitários**
 
@@ -144,27 +150,21 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ---
 
+<a name="autor">
+
 ## 🦸 Autor
 
-<a href="https://blog.rocketseat.com.br/author/thiago/">
- <img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/380327?s=460&u=61b426b901b8fe02e12019b1fdb67bf0072d4f00&v=4" width="100px;" alt=""/>
- <br />
- <sub><b>Thiago Marinho</b></sub></a> <a href="https://blog.rocketseat.com.br/author/thiago/" title="Rocketseat">🚀</a>
- <br />
+<img style="border-radius: 50%;" src="https://github.com/luisspassos.png" width="100px;" alt="Meu Avatar"/>
+<p>Luís Passos 🚀</p> 
 
-[![Twitter Badge](https://img.shields.io/badge/-@tgmarinho-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/tgmarinho)](https://twitter.com/tgmarinho) [![Linkedin Badge](https://img.shields.io/badge/-Thiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tgmarinho/)](https://www.linkedin.com/in/tgmarinho/) 
-[![Gmail Badge](https://img.shields.io/badge/-tgmarinho@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:tgmarinho@gmail.com)](mailto:tgmarinho@gmail.com)
+[![Gmail Badge](https://img.shields.io/badge/-luis.passos013@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:luis.passos013@gmail.com)](mailto:luis.passos013@gmail.com)
 
 ---
+	
+<a name="licença">
 
 ## 📝 Licença
 
 Este projeto esta sobe a licença [MIT](./LICENSE).
 
-Feito com ❤️ por Thiago Marinho 👋🏽 [Entre em contato!](https://www.linkedin.com/in/tgmarinho/)
-
----
-
-##  Versões do README
-
-[Português 🇧🇷](./README.md)  |  [Inglês sem emojis 🇺🇸](./README-en.md) | [Portugues sem logo  🇧🇷](./README-sem-logo.md) 
+Feito com ❤️ por Luís Passos 👋🏽
