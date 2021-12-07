@@ -35,15 +35,15 @@
 </h4>
 
 <p align="center">
- <a href="#sobre-o-projeto">About</a> •
- <a href="#funcionalidades">Functionalities</a> •
- <a href="#como-executar">How to run</a> • 
- <a href="#tecnologias">Technologies</a> • 
- <a href="#autor">Author</a> • 
- <a href="#licença">License</a>
+ <a href="#about-the-project">About</a> •
+ <a href="#functionalities">Functionalities</a> •
+ <a href="#how-to-run">How to run</a> • 
+ <a href="#technologies">Technologies</a> • 
+ <a href="#author">Author</a> • 
+ <a href="#license">License</a>
 </p>
 
-<a name="sobre-o-projeto">
+<a name="about-the-project">
 	
 ## 💻 About the project
 
@@ -53,7 +53,7 @@ Project designed for people who want a library that extracts data from Instagram
 
 ---
 	
-<a name="funcionalidades">
+<a name="functionalities">
 
 ## ⚙️ Functionalities
 
@@ -65,46 +65,46 @@ Project designed for people who want a library that extracts data from Instagram
     - URL;
   - [x] Comments:
     - Message;
-    - Avatar do autor;
-    - O arroba/nome do autor;	
-  - [X] Informações do Autor da postagem;
+    - Author avatar;
+    - The at sign/author's name;	
+  - [X] Post Author Information;
     - Avatar;
-    - Apelido;
-    - Arroba;
-  - [X] Data de postagem;
-  - [X] Descrição;
+    - Nickname;
+    - At sign;
+  - [X] Post date;
+  - [X] Description;
 
-- [x] Há mensagem de erro caso aconteça um. 
+- [x] There is an error message if a. 
 
 ---
 	
-<a name="como-executar">
+<a name="how-to-run">
 
-## 🚀 Como executar a dependência
+## 🚀 How to run the dependency
 
-Este projeto é executado no Back End.
+This project runs on the Back End.
+	
+### Prerequisites
 
-### Pré-requisitos
-
-Antes de começar, você vai precisar ter instalado em sua máquina a seguinte ferramenta:
+Before starting, you will need to have the following tool installed on your machine:
 [Node.js](https://nodejs.org/en/)<br>
-Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+Also it's nice to have an editor to work with code like [VSCode](https://code.visualstudio.com/)
 
-#### ⬇️ Baixando a dependência
+#### ⬇️ Downloading the dependency
 
 ```bash
 
-# Navegue até a pasta do seu projeto
+# Navigate to your project folder
 cd project/
 
-# Instale com o pacote NPM
+# Install with NPM package
 npm i webscraper_for_instagram
 
-# Ou com o yarn
+# Or with yarn
 yarn add webscraper_for_instagram
 
 ```
-#### 🪄 Executando
+#### 🪄 Running
 
 ```js
 const fetchInstagram = require("webscraper_for_instagram");
@@ -122,48 +122,48 @@ console.log(post);
 	
 ---
 	
-<a name="tecnologias">
+<a name="technologies">
 
-## 🛠 Tecnologias
+## 🛠 Technologies
 
-As seguintes ferramentas foram usadas na construção do projeto:
+The following tools were used in the construction of the project:
 	
 - <a href="https://nodejs.org/en/">Node JS</a>
 - <a href="https://pptr.dev/">Puppeteer</a>
 
-> Veja o arquivo <a href="https://github.com/luisspassos/WebScraper-For-Instagram/blob/main/package.json">package.json</a>
+> See the file <a href="https://github.com/luisspassos/WebScraper-For-Instagram/blob/main/package.json">package.json</a>
 
-#### [](https://github.com/luisspassos/WebScraper-For-Instagram#utilit%C3%A1rios)**Utilitários**
+#### [](https://github.com/luisspassos/WebScraper-For-Instagram#utilit%C3%A1rios)**Utilities**
 
 -   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**
 
 ---
 
-## 💪 Como contribuir para o projeto
+## 💪 How to contribute to the project
 
-1. Faça um **fork** do projeto.
-2. Crie uma nova branch com as suas alterações: `git checkout -b my-feature`
-3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feature: My new feature"`
-4. Envie as suas alterações: `git push origin my-feature`
-> Caso tenha alguma dúvida confira este [guia de como contribuir no GitHub](./CONTRIBUTING.md)
+1. **Fork** the project.
+2. Create a new branch with your changes: `git checkout -b my-feature`
+3. Save the changes and create a commit message telling you what you've done: `git commit -m "feature: My new feature"`
+4. Submit your changes: `git push origin my-feature`
+> If you have any questions, check out this [how to contribute on GitHub guide](./CONTRIBUTING.md)
 
 ---
 
-<a name="autor">
+<a name="author">
 
-## 🦸 Autor
+## 🦸 Author
 
-<img style="border-radius: 50%;" src="https://github.com/luisspassos.png" width="100px;" alt="Meu Avatar"/>
+<img style="border-radius: 50%;" src="https://github.com/luisspassos.png" width="100px;" alt="My Avatar"/>
 <p>Luís Passos 🚀</p> 
 
 [![Gmail Badge](https://img.shields.io/badge/-luis.passos013@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:luis.passos013@gmail.com)](mailto:luis.passos013@gmail.com)
 
 ---
 	
-<a name="licença">
+<a name="license">
 
-## 📝 Licença
+## 📝 License
 
-Este projeto esta sobe a licença [MIT](./LICENSE).
+This project is under license [MIT](./LICENSE).
 
-Feito com ❤️ por Luís Passos 👋🏽
+Made with ❤️ by Luís Passos 👋🏽
