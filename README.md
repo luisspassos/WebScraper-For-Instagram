@@ -1,4 +1,4 @@
-- <h3>Também leia esse <a href="./README-pt_br.md">README em português</a></h3>
+- <h3>Também leia esse <a href="https://github.com/luisspassos/WebScraper-For-Instagram/blob/main/README-pt_br.md">README em português</a></h3>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/badge/languages-1-green">
@@ -118,7 +118,7 @@ console.log(post);
 })()
 ```
 
-- <h3><a href="./output.json">OUTPUT</h3>
+- <h3><a href="https://github.com/luisspassos/WebScraper-For-Instagram/blob/main/output.json">OUTPUT</h3>
 	
 ---
 	
@@ -164,6 +164,6 @@ The following tools were used in the construction of the project:
 
 ## 📝 License
 
-This project is under license [MIT](./LICENSE).
+This project is under license [MIT](https://github.com/luisspassos/WebScraper-For-Instagram/blob/main/LICENSE).
 
 Made with ❤️ by Luís Passos 👋🏽
