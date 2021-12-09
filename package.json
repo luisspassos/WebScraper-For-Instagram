@@ -1,6 +1,6 @@
 {
   "name": "webscraper_for_instagram",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "main": "index.js",
   "author": "Luís Passos <luis.passos013@gmail.com>",
   "license": "MIT",
