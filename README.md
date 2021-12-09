@@ -27,7 +27,7 @@
  
 </p>
 <h1 align="center">
-    <img alt="Instagram_Logo" width="200" title="Instagram" src="./assets/instagram_logo.png" />
+    <img alt="Instagram_Logo" width="200" title="Instagram" src="https://github.com/luisspassos/WebScraper-For-Instagram/blob/main/assets/instagram_logo.png" />
 </h1>
 
 <h4 align="center"> 
